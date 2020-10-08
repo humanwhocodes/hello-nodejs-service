@@ -14,7 +14,7 @@ const fastify = require('fastify')({ logger: true })
 //-----------------------------------------------------------------------------
 
 const { PORT=8080 } = process.env;
-console.log(PORT);
+
 //-----------------------------------------------------------------------------
 // Server
 //-----------------------------------------------------------------------------
@@ -26,7 +26,7 @@ fastify.get("/", async (request, reply) => {
 
 (async () => {
     try {
-        await fastify.listen(PORT);
+        await fastify.listen(PORT, "0.0.0.0");
         fastify.log.info(`Server listening on ${fastify.server.address().port}`);
     } catch (error) {
         fastify.log.error(error)
