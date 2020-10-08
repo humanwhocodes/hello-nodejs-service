@@ -14,14 +14,7 @@ const fastify = require('fastify')({ logger: true })
 //-----------------------------------------------------------------------------
 
 const { PORT=8080, K_SERVICE } = process.env;
-
-/*
- * Cloud Run exposes a K_SERVICE environment variable. So, I'm using that to
- * determine when the server is running in Cloud Run vs. running in a dev
- * environment. Cloud Run needs to listen on 0.0.0.0 but in a dev environment
- * it's a lot to easier to work with 127.0.0.1.
- */
-const HOST = K_SERVICE ? "0.0.0.0" : "127.0.0.1";
+const HOST = "0.0.0.0";
 
 //-----------------------------------------------------------------------------
 // Server
