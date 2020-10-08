@@ -1,0 +1,36 @@
+{
+  "name": "@humanwhocodes/hello-service",
+  "version": "0.4.0",
+  "description": "A simple microservice for testing Google Cloud Run.",
+  "private": true,
+  "files": [
+    "src",
+    "LICENSE"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/nzakas"
+  },
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "npm run lint",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanwhocodes/hello-service.git"
+  },
+  "keywords": [
+    "Google Cloud Run",
+    "Node.js",
+    "Fastify"
+  ],
+  "author": "Nicholas C. Zaks",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "fastify": "^3.5.1"
+  }
+}
