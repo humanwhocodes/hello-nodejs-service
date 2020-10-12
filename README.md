@@ -1,4 +1,4 @@
-# Hello Service
+# Hello Node.js Service
 
 by [Nicholas C. Zakas](https://humanwhocodes.com)
 
@@ -23,6 +23,13 @@ $ npm start
 ```
 
 Locally, this will run the server on http://localhost:8080.
+
+To run inside a Docker container, download the [`pack` CLI](https://buildpacks.io/docs/tools/pack/cli/install/) and then run:
+
+```
+$ pack build app --builder gcr.io/buildpacks/builder
+$ docker run -it --init -p 8080:8080 -e PORT=8080 app
+```
 
 ## Notes
 

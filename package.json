@@ -1,5 +1,5 @@
 {
-  "name": "@humanwhocodes/hello-service",
+  "name": "@humanwhocodes/hello-nodejs-service",
   "version": "0.4.0",
   "description": "A simple microservice for testing Google Cloud Run.",
   "private": true,
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/humanwhocodes/hello-service.git"
+    "url": "git+https://github.com/humanwhocodes/hello-nodejs-service.git"
   },
   "keywords": [
     "Google Cloud Run",
